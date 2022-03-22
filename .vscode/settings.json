@@ -8,5 +8,6 @@
 		"statusBarItem.remoteForeground": "#15202b"
 	},
 	"peacock.color": "#61dafb",
-	"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+	"eslint.format.enable": true,
 }
