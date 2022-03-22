@@ -1,11 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import styles from './App.module.scss';
+import Header from './components/Header';
 
 const App: React.FC<{}> = () => {
   return (
     <div className={styles.App}>
-      <header className={styles.header}>
+      <Header>
         <img src={logo} className={styles.logo} alt="logo" />
         <p>
           Edit
@@ -20,7 +21,7 @@ const App: React.FC<{}> = () => {
         >
           Learn React
         </a>
-      </header>
+      </Header>
     </div>
   );
 };
