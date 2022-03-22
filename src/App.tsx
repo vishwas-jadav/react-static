@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import styles from './App.module.scss';
 import Header from './components/Header';
 
-function App() {
+const App: React.FC<{}> = () => {
   return (
     <div className={styles.App}>
       <Header>
@@ -14,7 +14,7 @@ function App() {
           and save to reload.
         </p>
         <a
-          className="App-link"
+          className={styles.link}
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
@@ -24,6 +24,6 @@ function App() {
       </Header>
     </div>
   );
-}
+};
 
 export default App;
