@@ -1,0 +1,21 @@
+.header {
+  padding: 2rem;
+  background-color: #21222A;
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 auto;
+
+  .logo {
+    align-self: flex-start;
+    display: flex;
+    pointer-events: none;
+  }
+
+  .title {
+    align-self: flex-start;
+  }
+
+  .description {
+    align-self: flex-end;
+  }
+}

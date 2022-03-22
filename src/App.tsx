@@ -1,12 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.scss';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className={styles.App}>
+      <Header>
+        <img src={logo} className={styles.logo} alt="logo" />
         <p>
           Edit
           <code>src/App.tsx</code>
@@ -20,7 +21,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </Header>
     </div>
   );
 }
