@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import React from 'react';
 import styles from './Text.module.scss';
 
-export type TextTypes = 'Heading' | 'Title';
+export type TextTypes = 'Heading' | 'Title' | 'SubHeading' | 'Body';
 export type TextColors = 'White' | 'Blue' | 'Grey';
 
 export type TextProps = {

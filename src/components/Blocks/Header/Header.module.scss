@@ -3,6 +3,8 @@
   background-color: #21222A;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   flex: 0 0 auto;
 
   .logo {
@@ -12,10 +14,11 @@
   }
 
   .title {
-    align-self: flex-start;
+    flex: 1 0 auto;
+    align-self: center;
   }
 
   .description {
-    align-self: flex-end;
+    align-self: center;
   }
 }

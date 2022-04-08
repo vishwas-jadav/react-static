@@ -1,12 +1,13 @@
 import React from 'react';
 import cx from 'classnames';
 import styles from './Header.module.scss';
-import Logo, { LogoProps } from '../Logo';
-import Text, { TextProps } from '../Text/Text';
+import Logo, { LogoProps } from '../../Atoms/Logo';
+import Text, { TextProps } from '../../Atoms/Text';
 
 export type HeaderProps = {
   className?: string;
-  text?: TextProps;
+  title?: TextProps;
+  description?: TextProps;
   logo?: LogoProps;
 };
 
@@ -14,24 +15,33 @@ export const defaultProps = {
   logo: {
     asset: 'WebIcon',
   } as LogoProps,
-  text: {
+  title: {
     type: 'Title',
     color: 'Blue',
+  } as TextProps,
+  description: {
+    type: 'Heading',
+    color: 'Grey',
   } as TextProps,
 };
 
 const Header: React.FC<HeaderProps> = ({
   className,
   logo,
-  text,
+  title,
+  description,
 }) => {
-  if (text) {
-    text.value = 'ReactFacts';
+  if (title && !title.value) {
+    title.value = 'ReactFacts';
+  }
+  if (description && !description.value) {
+    description.value = 'React Course - Project 1';
   }
   return (
     <div className={cx(className, styles.header)}>
       <Logo {...logo} className={styles.logo}/>
-      <Text {...text} />
+      <Text className={styles.title} {...title} />
+      <Text className={styles.description} {...description} />
     </div>
   );
 };
