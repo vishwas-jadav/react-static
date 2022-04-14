@@ -1,0 +1,13 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: stretch;
+  flex: 1 0 auto;
+  background-color: #282D35;
+  padding: 2rem;
+  background-image: url('../../../../public/reactjs-icon2.png');
+  background-repeat: no-repeat;
+  background-position: right 25%;
+}

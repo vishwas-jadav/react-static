@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 import styles from './Logo.module.scss';
-import Icon from '../../logo.svg';
+import Icon from '../../../logo.svg';
 
 export type LogoAssets = 'WebIcon';
 
@@ -25,7 +25,7 @@ const Logo: React.FC<LogoProps> = ({
       break;
   }
   return (
-  <img className={cx(className, styles.Logo)} src={src} alt='Logo' />
+    <img className={cx(className, styles.Logo)} src={src} alt='Logo' />
   );
 };
 

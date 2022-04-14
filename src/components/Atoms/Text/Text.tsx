@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import React from 'react';
 import styles from './Text.module.scss';
 
-export type TextTypes = 'Heading' | 'Title' | 'SubHeading' | 'Body';
+export type TextTypes = 'Heading' | 'Title' | 'SubHeading' | 'Body' | 'ListBody';
 export type TextColors = 'White' | 'Blue' | 'Grey';
 
 export type TextProps = {
@@ -40,6 +40,15 @@ const Text: React.FC<TextProps> = ({
         <h1 className={styles.value}>
           {value}
         </h1>
+      );
+      break;
+    }
+
+    case 'ListBody': {
+      valueView = (
+        <span className={styles.value}>
+          {value}
+        </span>
       );
       break;
     }

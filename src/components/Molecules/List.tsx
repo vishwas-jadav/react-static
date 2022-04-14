@@ -7,20 +7,25 @@ export type ListProps = {
   items?: TextProps[];
 };
 
+export const defaultListItemProps = {
+  color: 'Grey',
+  type: 'ListBody',
+} as TextProps;
+
 const List: React.FC<ListProps> = ({
   title,
   items,
 }) => {
   const itemsView = items?.map((item, index) => {
     return (
-      <li key={index}>
+      <li key={index} className={styles.listItem}>
         <Text {...item} />
       </li>
     );
   });
   return (
     <>
-      <Text {...title}  />
+      <Text {...title} className={styles.title}  />
       <ul className={styles.listBlueDot}>
         {itemsView}
       </ul>

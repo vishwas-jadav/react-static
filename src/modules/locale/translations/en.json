@@ -1,0 +1,12 @@
+{
+  "content": {
+    "title": "Fun Facts about React"
+  },
+  "reactFeatures": {
+    "feature1": "Was first released in 2013",
+    "feature2": "Was originally created by Jordan Walke",
+    "feature3": "Has well over 100K stars in GitHub",
+    "feature4": "Is maintained by Facebook",
+    "feature5": "Powers thousands of enterprise apps, and mobile apps"
+  }
+}
